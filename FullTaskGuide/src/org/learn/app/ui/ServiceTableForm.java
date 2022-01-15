@@ -182,11 +182,6 @@ public class ServiceTableForm extends BaseForm
         dealButton.addActionListener(e -> {
             DialogUtil.showInfo(this, "Связаться с разработчиком можно по почте vasya_2008@mail.ru");
         });
-
-        clientServiceTableButton.addActionListener(e -> {
-            dispose();
-            new ClientServiceTableForm();
-        });
     }
 
     private void updateRowCountLabel(int actual, int max)
